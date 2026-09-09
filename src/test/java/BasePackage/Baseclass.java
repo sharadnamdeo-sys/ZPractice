@@ -8,15 +8,25 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Baseclass {
+
+    private static final boolean HEADLESS = false;
 
     protected WebDriver driver;
     protected final String baseUrl = "https://testautomationpractice.blogspot.com/";
 
+    protected PageClasses.Homepage getHomePage() {
+        return new PageClasses.Homepage(driver);
+    }
+
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
+        WebDriverManager.chromedriver().driverVersion("151.0.7922.174").setup();
+
         ChromeOptions options = new ChromeOptions();
-        if (Boolean.parseBoolean(System.getProperty("headless", "true"))) {
+        if (HEADLESS) {
             options.addArguments("--headless=new");
         }
         options.addArguments("--window-size=1920,1080");

@@ -1,7 +1,6 @@
 package TestClasses;
 
 import BasePackage.Baseclass;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +11,6 @@ public class LoginPage extends Baseclass {
         PageClasses.Homepage loginPage = new PageClasses.Homepage(driver);
         Assert.assertTrue(loginPage.isPageLoaded());
         Assert.assertTrue(loginPage.isNameDisplayed());
-        loginPage.enterName("Sharad");
     }
 
     @Test
@@ -28,6 +26,4 @@ public class LoginPage extends Baseclass {
         home.selectCountry("Japan");
         home.selectColor("White");
     }
-
-
 }

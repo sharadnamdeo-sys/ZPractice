@@ -2,24 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-22T16:16:42 IST" name="Surefire suite" finished-at="2026-08-22T16:16:50 IST" duration-ms="7570">
+  <suite started-at="2026-09-09T15:22:00 IST" name="ZPractice Test Suite" finished-at="2026-09-09T15:22:07 IST" duration-ms="7110">
     <groups>
+      <group name="smoke">
+        <method signature="LoginPage.loginPageOpens()[pri:0, instance:TestClasses.LoginPage@49d904ec]" name="loginPageOpens" class="TestClasses.LoginPage"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-08-22T16:16:42 IST" name="Surefire test" finished-at="2026-08-22T16:16:50 IST" duration-ms="7570">
+    <test started-at="2026-09-09T15:22:00 IST" name="Smoke Tests" finished-at="2026-09-09T15:22:07 IST" duration-ms="7110">
       <class name="TestClasses.LoginPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestClasses.LoginPage@1d548a08]" started-at="2026-08-22T16:16:42 IST" name="setUp" finished-at="2026-08-22T16:16:49 IST" duration-ms="6702" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestClasses.LoginPage@49d904ec]" started-at="2026-09-09T15:22:00 IST" name="setUp" finished-at="2026-09-09T15:22:07 IST" duration-ms="6834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageOpens1()[pri:0, instance:TestClasses.LoginPage@1d548a08]" started-at="2026-08-22T16:16:49 IST" name="loginPageOpens1" finished-at="2026-08-22T16:16:50 IST" duration-ms="655" status="PASS">
+        <test-method signature="loginPageOpens()[pri:0, instance:TestClasses.LoginPage@49d904ec]" started-at="2026-09-09T15:22:07 IST" name="loginPageOpens" finished-at="2026-09-09T15:22:07 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageOpens1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestClasses.LoginPage@1d548a08]" started-at="2026-08-22T16:16:50 IST" name="tearDown" finished-at="2026-08-22T16:16:50 IST" duration-ms="177" status="PASS">
+        </test-method> <!-- loginPageOpens -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestClasses.LoginPage@49d904ec]" started-at="2026-09-09T15:22:07 IST" name="tearDown" finished-at="2026-09-09T15:22:07 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestClasses.LoginPage -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- ZPractice Test Suite -->
 </testng-results>
